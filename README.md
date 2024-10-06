@@ -37,7 +37,7 @@ In such cases, the calculator displays an error message and resets the display.
 # Running the Calculator
 
 
-To run the calculator, simply execute the *main.py*, which initializes the GUI and starts the main event loop.
+To run the calculator, simply execute the *calculator.py*, which initializes the GUI and starts the main event loop.
 
 
 # License
@@ -56,5 +56,6 @@ Tobias Kisling (Github: https://github.com/hasderhi)
 
 
 Python 3.x;
+---
 Tkinter library (included with Python)
 
