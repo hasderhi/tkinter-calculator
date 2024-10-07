@@ -6,7 +6,7 @@
 
 # Its purpose is to be an educational example of how tkinter can be used for small GUI applications
 # and to demonstrate the use of the tkinter module in python.
-# All variables and function names should be written in camelCase.
+# All variables and function names are written in camelCase.
 
 # Copyright (c) 2024 Tobias Kisling (Github: https://github.com/hasderhi).
 # This software is released under the MIT license.
@@ -67,14 +67,14 @@ def createRoot():
     # Now the program will initialize a frame for the 'display' (The part of the GUI that displays the calculation).
 
     # First, it creates a frame for the display in 'root'
-    display_frame = Frame(root, width=540, height=100, bg="#808080")
-    display_frame.place(x=10, y=10)
+    displayFrame = Frame(root, width=540, height=100, bg="#808080")
+    displayFrame.place(x=10, y=10)
 
-    display_frame.rowconfigure(0, weight=1)  # This centers the frame.
-    display_frame.columnconfigure(0, weight=1)
+    displayFrame.rowconfigure(0, weight=1)  # This centers the frame.
+    displayFrame.columnconfigure(0, weight=1)
 
     display = Label(
-        display_frame,
+        displayFrame,
         width=32,
         height=3,
         font=("TkDefaultFont", 21),
@@ -84,13 +84,13 @@ def createRoot():
 
     # Now that the display is created, the code will initialize another frame for the buttons of the calculator
 
-    buttons_frame = Frame(root, width=480, height=500, bg="#808080")
-    buttons_frame.place(x=10, y=120)
+    buttonsFrame = Frame(root, width=480, height=500, bg="#808080")
+    buttonsFrame.place(x=10, y=120)
 
     # Now we create buttons that resemble a numpad with numbers, operators, a backspace ('del') and an 'AC' clear button.
 
     button7 = Button(
-        buttons_frame,
+        buttonsFrame,
         width=15,
         height=5,
         text="7",
@@ -100,7 +100,7 @@ def createRoot():
     button7.grid(row=0, column=0, sticky="nsew")
 
     button8 = Button(
-        buttons_frame,
+        buttonsFrame,
         width=15,
         height=5,
         text="8",
@@ -110,7 +110,7 @@ def createRoot():
     button8.grid(row=0, column=1, sticky="nsew")
 
     button9 = Button(
-        buttons_frame,
+        buttonsFrame,
         width=15,
         height=5,
         text="9",
@@ -120,7 +120,7 @@ def createRoot():
     button9.grid(row=0, column=2, sticky="nsew")
 
     buttonDiv = Button(
-        buttons_frame,
+        buttonsFrame,
         width=15,
         height=5,
         text="/",
@@ -130,7 +130,7 @@ def createRoot():
     buttonDiv.grid(row=0, column=3, sticky="nsew")
 
     button4 = Button(
-        buttons_frame,
+        buttonsFrame,
         width=15,
         height=5,
         text="4",
@@ -140,7 +140,7 @@ def createRoot():
     button4.grid(row=1, column=0, sticky="nsew")
 
     button5 = Button(
-        buttons_frame,
+        buttonsFrame,
         width=15,
         height=5,
         text="5",
@@ -150,7 +150,7 @@ def createRoot():
     button5.grid(row=1, column=1, sticky="nsew")
 
     button6 = Button(
-        buttons_frame,
+        buttonsFrame,
         width=15,
         height=5,
         text="6",
@@ -160,7 +160,7 @@ def createRoot():
     button6.grid(row=1, column=2, sticky="nsew")
 
     buttonMult = Button(
-        buttons_frame,
+        buttonsFrame,
         width=15,
         height=5,
         text="*",
@@ -170,7 +170,7 @@ def createRoot():
     buttonMult.grid(row=1, column=3, sticky="nsew")
 
     button1 = Button(
-        buttons_frame,
+        buttonsFrame,
         width=15,
         height=5,
         text="1",
@@ -180,7 +180,7 @@ def createRoot():
     button1.grid(row=2, column=0, sticky="nsew")
 
     button2 = Button(
-        buttons_frame,
+        buttonsFrame,
         width=15,
         height=5,
         text="2",
@@ -190,7 +190,7 @@ def createRoot():
     button2.grid(row=2, column=1, sticky="nsew")
 
     button3 = Button(
-        buttons_frame,
+        buttonsFrame,
         width=15,
         height=5,
         text="3",
@@ -200,7 +200,7 @@ def createRoot():
     button3.grid(row=2, column=2, sticky="nsew")
 
     buttonSubt = Button(
-        buttons_frame,
+        buttonsFrame,
         width=15,
         height=5,
         text="-",
@@ -210,7 +210,7 @@ def createRoot():
     buttonSubt.grid(row=2, column=3, sticky="nsew")
 
     button0 = Button(
-        buttons_frame,
+        buttonsFrame,
         width=15,
         height=5,
         text="0",
@@ -220,7 +220,7 @@ def createRoot():
     button0.grid(row=3, column=0, sticky="nsew")
 
     buttonDel = Button(
-        buttons_frame,
+        buttonsFrame,
         width=15,
         height=5,
         text="DEL",
@@ -230,7 +230,7 @@ def createRoot():
     buttonDel.grid(row=3, column=1, sticky="nsew")
 
     buttonAC = Button(
-        buttons_frame,
+        buttonsFrame,
         width=15,
         height=5,
         text="AC",
@@ -240,7 +240,7 @@ def createRoot():
     buttonAC.grid(row=3, column=2, sticky="nsew")
 
     buttonAdd = Button(
-        buttons_frame,
+        buttonsFrame,
         width=15,
         height=5,
         text="+",
