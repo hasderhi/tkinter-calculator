@@ -6,7 +6,7 @@
 
 #Its purpose is to be an educational example of how tkinter can be used for small GUI applications
 #and to demonstrate the use of the tkinter module in python.
-#All variables and function names should be written in camelCase.
+
 
 #Copyright (c) 2024 Tobias Kisling (Github: https://github.com/hasderhi).
 #This software is released under the MIT license.
