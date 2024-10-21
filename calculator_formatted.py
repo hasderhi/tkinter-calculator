@@ -285,7 +285,7 @@ def createEquation(
 def backspace():  # This function deletes the last entry in the array.
     if (
         equation != []
-    ):  # Checks if the array is not empty because we cannot pop a empty array.
+    ):  # Checks if the array is not empty because we cannot pop an empty array.
         equation.pop()  #'Pops' (delete last entry) the array.
         reloadDisplay()  # Reloads the display.
 
