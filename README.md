@@ -46,7 +46,7 @@ This software is released under the MIT license. See the LICENSE file for detail
 
 # Author
 
-Tobias Kisling (Github: https://github.com/hasderhi)
+Annabeth Kisling (Github: https://github.com/hasderhi)
 
 # Version
 
